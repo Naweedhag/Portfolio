@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COC-Stats</title>
+    <link rel="stylesheet" href="./goblin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="nav_bar container">
+          <div class="logo">
+            <span>NA</span>
+            <div class="weedmage">
+              <img src="./images/3leaf.png" alt="None" />
+            </div>
+            <span>EEDHAG</span>
+          </div>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <section id="home" class="hero-seg container">
+      <div class="social-icons">
+        <a
+          href="https://www.instagram.com/naweedhag?igsh=bWxmd211ajhscnpx&utm_source=qr"
+          target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+
+        <a href="https://kish.ut.ac.ir/fa/-/why-utkic" target="_blank"
+          ><i class="fas fa-globe"></i
+        ></a>
+      </div>
+      <div class="hero-content">
+        <p>My Portfolio</p>
+        <h1>Navidreza Haghighi</h1>
+        <h2>BCompEng</h2>
+        <p>
+          Hi my name is Navidreza Haghighi, a dedicated Computer Engineering
+          graduate from Tehran, Iran. My passion lies in exploring the frontiers
+          of Artificial Intelligence (Machine Learning, Deep Learning), Data
+          Science, and Web Development.
+        </p>
+        <div class="buttons">
+          <button
+            class="btn1"
+            onclick="document.getElementById('skills').scrollIntoView({behavior: 'smooth'})"
+            style="color: #fff"
+          >
+            Projects
+          </button>
+          <button
+            class="btn2"
+            onclick="window.open('https://www.linkedin.com/in/navidreza-haghighi-2261401b6', '_blank')"
+            style="color: #fff"
+          >
+            Contact Me
+          </button>
+        </div>
+      </div>
+      <div class="gob_image">
+        <img src="./images/81527881656.png" alt="no image was included" />
+        <span class="cloud-text">
+          Disclaimer: The Logo is simply a design idea and I neither promote nor
+          consume any kind of drugs! LOL :D
+        </span>
+        <div class="cloud">
+          <img class="cloud" src="./images/comiccloud.png" width="250" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="picmic animate container">
+      <img class="moox" src="./images/boy-with-cap-icon.png" alt="none" />
+      <img
+        class="moox"
+        src="./images/innovation-creativity-icon.png"
+        alt="none"
+      />
+      <img class="moox" src="./images/briefcase-color-icon.png" />
+    </section>
+
+    <section id="about" class="section-about animate container">
+      <p>About Me</p>
+
+      <li class="eecs">Profession: Computer Engineer</li>
+      <li>
+        Passion: Solving problems, Exploring AI and automation, Tinkering with
+        new tech, Building scalable solutions
+      </li>
+      <li class="eecs">
+        Education: Bachelor of computer Engineering at University of Tehran Kish
+        International Campus
+      </li>
+      <li class="eecs">
+        Fun Fact: I'm a hardcore Marvel/Comic fan and a coffee enthusiast ☕ LOL
+        :D
+      </li>
+    </section>
+    <section id="skills" class="section-projects animate container">
+      <p>Projects</p>
+      <li class="eecs">
+        EECS 1011 Minor Project: Auto Plant Watering with Arduino and Matlab
+        <button
+          class="btn-check"
+          onclick="window.open('https://youtu.be/ZDfuMdFUYeo','_blank')"
+        >
+          check-out
+        </button>
+      </li>
+      <li class="eecs">
+        HP TPM Upgrading
+        <button
+          class="btn-check"
+          href="https://youtu.be/ZDfuMdFUYeo"
+          target="_blank"
+        >
+          check-out
+        </button>
+      </li>
+      <li class="eecs">
+        Tapsi Landing Web Page
+        <button class="btn-check" href="#">check-out</button>
+      </li>
+    </section>
+    <section id="experience" class="section-experience animate container">
+      <p>Experience</p>
+      <div class="my-experience">
+        <li class="eecs">
+          Front-end Development intern at Negah-Bank E Karafarin
+        </li>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const colorToggle = document.getElementById("colorToggle");
+
+        // Check for saved theme preference
+        if (localStorage.getItem("theme") === "purple") {
+          document.body.classList.add("purple-theme");
+        }
+
+        // Toggle function
+        colorToggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.body.classList.toggle("purple-theme");
+
+          // Save preference
+          if (document.body.classList.contains("purple-theme")) {
+            localStorage.setItem("theme", "purple");
+          } else {
+            localStorage.setItem("theme", "blue");
+          }
+        });
+      });
+    </script>
+
+    <script>
+      // Scroll to top on page load/refresh
+      window.onload = function () {
+        // Check if we're not already at the top
+        if (window.location.hash) {
+          setTimeout(function () {
+            window.scrollTo(0, 0);
+          }, 1);
+        }
+
+        // Your existing color toggle code
+        const colorToggle = document.getElementById("colorToggle");
+
+        if (localStorage.getItem("theme") === "purple") {
+          document.body.classList.add("purple-theme");
+        }
+
+        colorToggle.addEventListener("click", function (e) {
+          e.preventDefault();
+          document.body.classList.toggle("purple-theme");
+
+          if (document.body.classList.contains("purple-theme")) {
+            localStorage.setItem("theme", "purple");
+          } else {
+            localStorage.setItem("theme", "blue");
+          }
+        });
+      };
+    </script>
+  </body>
+</html>
