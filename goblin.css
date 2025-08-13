@@ -146,7 +146,6 @@ small {
   z-index: 1000 !important;
   position: absolute;
   width: 150px;
-
   right: 70px;
 }
 
@@ -155,7 +154,7 @@ small {
 }
 .cloud {
   position: absolute;
-  top: -70px;
+  top: -75px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
@@ -164,7 +163,7 @@ small {
 
 .cloud-text {
   position: absolute;
-  top: -80px;
+  top: -110px;
   left: 50%;
   transform: translateX(-50%);
   width: 200px;
