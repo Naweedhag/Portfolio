@@ -153,7 +153,6 @@ small {
 .gob_image {
   position: relative;
 }
-
 .cloud {
   position: absolute;
   top: -70px;
@@ -262,11 +261,9 @@ i.fa.fa-youtube::before {
   opacity: 0;
   animation: fadeUp 1s ease forwards;
 }
-
 .picmic.animate {
   animation-delay: 0.3s;
 }
-
 .section-about.animate {
   animation-delay: 0.6s;
 }
@@ -300,7 +297,6 @@ i.fa.fa-youtube::before {
   background-color: #fff;
   box-shadow: #000;
 }
-
 .animate {
   opacity: 0;
   animation: fadeUp 1s ease forwards;
@@ -338,7 +334,6 @@ body.purple-theme {
   color: var(--main-color);
   opacity: 0.8;
 }
-
 .btn-check {
   position: relative;
   padding: 8px 20px;
@@ -353,17 +348,14 @@ body.purple-theme {
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
-
 .btn-check:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(157, 80, 187, 0.4);
   background: linear-gradient(45deg, #9d50bb, #6e48aa);
 }
-
 .btn-check:active {
   transform: translateY(0);
 }
-
 .btn-check::after {
   content: "→";
   position: absolute;
@@ -452,7 +444,6 @@ body.purple-theme {
 html {
   scroll-behavior: smooth;
 }
-
 /* scrollbar */
 ::-webkit-scrollbar {
   width: 12px;
@@ -468,7 +459,6 @@ html {
   border: 2px solid transparent;
   background-clip: content-box;
 }
-
 * {
   scrollbar-width: thin;
   scrollbar-color: white transparent;
