@@ -73,7 +73,7 @@
       <div class="gob_image">
         <img src="./images/81527881656.png" alt="no image was included" />
         <span class="cloud-text">
-          Disclaimer: The Logo is simply a design idea based on my social media ID and I neither promote nor
+          Disclaimer: The Logo is simply a design idea based on my social media IDs and I neither promote nor
           consume any kind of drugs! LOL :D
         </span>
         <div class="cloud">
@@ -148,12 +148,10 @@
       document.addEventListener("DOMContentLoaded", function () {
         const colorToggle = document.getElementById("colorToggle");
 
-        // Check for saved theme preference
         if (localStorage.getItem("theme") === "purple") {
           document.body.classList.add("purple-theme");
         }
 
-        // Toggle function
         colorToggle.addEventListener("click", function (e) {
           e.preventDefault();
           document.body.classList.toggle("purple-theme");
@@ -169,16 +167,12 @@
     </script>
 
     <script>
-      // Scroll to top on page load/refresh
       window.onload = function () {
-        // Check if we're not already at the top
         if (window.location.hash) {
           setTimeout(function () {
             window.scrollTo(0, 0);
           }, 1);
         }
-
-        // Your existing color toggle code
         const colorToggle = document.getElementById("colorToggle");
 
         if (localStorage.getItem("theme") === "purple") {
@@ -193,7 +187,7 @@
             localStorage.setItem("theme", "purple");
           } else {
             localStorage.setItem("theme", "blue");
-            //
+            
           }
         });
       };
