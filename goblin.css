@@ -576,15 +576,15 @@ img {
 .container {
   width: min(100%, 1440px);
   margin-inline: auto;
-  padding-inline: clamp(1.25rem, 6vw, 10rem);
+  padding-inline: 6rem;
 }
 
 .hero-seg {
   min-height: 720px;
   height: auto;
   align-items: center;
-  gap: clamp(2rem, 5vw, 5rem);
-  padding-top: clamp(7rem, 12vw, 9.5rem);
+  gap: 4rem;
+  padding-top: 8rem;
   padding-bottom: 5rem;
 }
 
@@ -594,7 +594,7 @@ img {
 }
 
 .hero-content h1 {
-  font-size: clamp(2rem, 4vw, 3.75rem);
+  font-size: 3.5rem;
   line-height: 1.1;
   overflow-wrap: anywhere;
 }
@@ -630,9 +630,9 @@ img {
 
 /* The image and copy share one scaling context so they never drift apart. */
 .gob_image > .cloud {
-  top: clamp(-8rem, -9vw, -5rem);
+  top: -6.5rem;
   left: 50%;
-  width: clamp(13rem, 50%, 17rem);
+  width: 16rem;
   aspect-ratio: 3397 / 3411;
   transform: translateX(-50%);
   opacity: 0;
@@ -655,7 +655,7 @@ img {
   left: 14%;
   width: 70%;
   transform: none;
-  font-size: clamp(0.56rem, 0.72vw, 0.72rem);
+  font-size: 0.68rem;
   line-height: 1.25;
   opacity: 0;
   animation: fadeIn 1s ease-out forwards 1s;
@@ -668,6 +668,10 @@ img {
 }
 
 @media (max-width: 1000px) {
+  .container {
+    padding-inline: 3rem;
+  }
+
   .nav_bar {
     flex-direction: column;
     gap: 1.25rem;
@@ -686,6 +690,10 @@ img {
 
   .hero-content {
     flex-basis: calc(100% - 4rem);
+  }
+
+  .hero-content h1 {
+    font-size: 2.75rem;
   }
 
   .gob_image {
@@ -765,16 +773,16 @@ img {
   .gob_image {
     order: 3;
     width: min(88vw, 24rem);
-    margin-top: clamp(5rem, 24vw, 7rem);
+    margin-top: 6rem;
   }
 
   .gob_image > .cloud {
-    top: clamp(-7.5rem, -25vw, -5.25rem);
-    width: clamp(12rem, 63vw, 15rem);
+    top: -6rem;
+    width: 13.5rem;
   }
 
   .gob_image .cloud-text {
-    font-size: clamp(0.5rem, 2.05vw, 0.64rem);
+    font-size: 0.56rem;
   }
 
   .picmic {
@@ -846,19 +854,19 @@ img {
 
 /* Tighter spacing between content sections */
 .section-about {
-  padding-top: clamp(3.25rem, 6vw, 5rem);
-  padding-bottom: clamp(3.25rem, 6vw, 5rem);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .section-projects,
 .section-experience {
-  padding-top: clamp(2.75rem, 5vw, 4.25rem);
-  padding-bottom: clamp(2.75rem, 5vw, 4.25rem);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 /* Footer */
 .site-footer {
-  margin-top: clamp(2rem, 4vw, 3.5rem);
+  margin-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
   background: rgba(4, 30, 21, 0.52);
   backdrop-filter: blur(12px);
@@ -869,9 +877,9 @@ img {
 .footer-content {
   display: grid;
   grid-template-columns: minmax(15rem, 1.5fr) repeat(3, minmax(8rem, 1fr));
-  gap: clamp(2rem, 5vw, 4.5rem);
-  padding-top: clamp(3.5rem, 7vw, 6rem);
-  padding-bottom: clamp(2.5rem, 5vw, 4rem);
+  gap: 3rem;
+  padding-top: 3.5rem;
+  padding-bottom: 2.5rem;
 }
 
 .footer-intro {
@@ -977,15 +985,15 @@ img {
 .section-projects,
 .section-experience {
   display: grid;
-  gap: clamp(1rem, 2.5vw, 1.75rem);
+  gap: 1.25rem;
 }
 
 .section-projects > p,
 .section-experience > p {
   position: relative;
   width: fit-content;
-  margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.15;
 }
@@ -1006,10 +1014,10 @@ img {
 .my-experience > li {
   display: flex;
   align-items: center;
-  gap: clamp(0.85rem, 2vw, 1.25rem);
-  min-height: clamp(6rem, 10vw, 8rem);
+  gap: 1rem;
+  min-height: 7rem;
   margin: 0;
-  padding: clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 4vw, 2.5rem);
+  padding: 1.5rem 2rem;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 1.25rem;
   background: linear-gradient(
@@ -1049,7 +1057,7 @@ img {
 
 .my-experience {
   display: grid;
-  gap: clamp(1rem, 2.5vw, 1.75rem);
+  gap: 1.25rem;
   margin-bottom: 0;
 }
 
@@ -1118,16 +1126,16 @@ img {
 /* About section presentation */
 .section-about {
   display: grid;
-  gap: clamp(1rem, 2.5vw, 1.75rem);
-  padding-top: clamp(5rem, 9vw, 8rem);
-  padding-bottom: clamp(5rem, 9vw, 8rem);
+  gap: 1.25rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .section-about > p {
   position: relative;
   width: fit-content;
-  margin-bottom: clamp(0.75rem, 2vw, 1.5rem);
-  font-size: clamp(1.8rem, 4vw, 3rem);
+  margin-bottom: 1rem;
+  font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.15;
 }
@@ -1146,9 +1154,9 @@ img {
 .section-about > li {
   display: flex;
   align-items: center;
-  min-height: clamp(6rem, 10vw, 8rem);
+  min-height: 7rem;
   margin: 0;
-  padding: clamp(1.25rem, 3vw, 2rem) clamp(1.25rem, 4vw, 2.5rem);
+  padding: 1.5rem 2rem;
   list-style-position: inside;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: 1.25rem;
@@ -1169,7 +1177,7 @@ img {
   flex: 0 0 0.65rem;
   width: 0.65rem;
   height: 0.65rem;
-  margin-right: clamp(0.85rem, 2vw, 1.25rem);
+  margin-right: 1rem;
   border-radius: 50%;
   background: linear-gradient(135deg, #d9a7ef, #8e44ad);
   box-shadow: 0 0 0 5px rgba(217, 167, 239, 0.12);
@@ -1188,15 +1196,15 @@ img {
 
 .section-projects,
 .section-experience {
-  padding-top: clamp(3.5rem, 7vw, 6rem);
-  padding-bottom: clamp(3.5rem, 7vw, 6rem);
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
 @media (max-width: 640px) {
   .section-about {
     gap: 1rem;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 2.25rem;
+    padding-bottom: 2.25rem;
   }
 
   .section-about > p {
