@@ -63,7 +63,7 @@
           </button>
           <button
             class="btn2"
-            onclick="window.open('https://www.linkedin.com/in/navidreza-haghighi-2261401b6', '_blank')"
+            onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"
             style="color: #fff"
           >
             Contact Me
@@ -71,14 +71,17 @@
         </div>
       </div>
       <div class="gob_image">
-        <img src="./images/81527881656.png" alt="no image was included" />
-      <span class="cloud-text">
-  Disclaimer: The Logo is simply a design idea based on my social media IDs and my high school era's nickname and I neither promote nor
-  consume any kind of drugs!
-  <br>LOL:D<br>لوگو شوخیه بخدا
-</span>
+        <img
+          src="./images/portrait-polished.png"
+          alt="Illustrated portrait of Navidreza Haghighi"
+        />
         <div class="cloud">
-          <img class="cloud" src="./images/comiccloud.png" width="270" alt="" />
+          <img src="./images/comiccloud.png" alt="" />
+          <span class="cloud-text">
+            Disclaimer: The Logo is simply a design idea based on my social
+            media IDs and my high school era's nickname and I neither promote
+            nor consume any kind of drugs!<br />LOL:D<br />لوگو شوخیه بخدا
+          </span>
         </div>
       </div>
     </section>
@@ -142,57 +145,64 @@
         <li class="eecs">
           Front-end Development intern at Negah-Bank E Karafarin
         </li>
+        <li class="eecs">Tech Support at NEXIUM PC</li>
       </div>
     </section>
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const colorToggle = document.getElementById("colorToggle");
+    <footer id="contact" class="site-footer">
+      <div class="footer-content container">
+        <div class="footer-intro">
+          <div class="logo footer-logo">
+            <span>NA</span>
+            <div class="weedmage">
+              <img src="./images/3leaf.png" alt="" />
+            </div>
+            <span>EEDHAG</span>
+          </div>
+          <p>
+            Computer Engineer interested in AI, data science, and thoughtful
+            web experiences.
+          </p>
+        </div>
 
-        if (localStorage.getItem("theme") === "purple") {
-          document.body.classList.add("purple-theme");
-        }
+        <div class="footer-column">
+          <h3>Based In</h3>
+          <p><i class="fas fa-location-dot" aria-hidden="true"></i> Tehran, Iran</p>
+          <p><i class="fas fa-briefcase" aria-hidden="true"></i> Open to opportunities</p>
+        </div>
 
-        colorToggle.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.body.classList.toggle("purple-theme");
+        <div class="footer-column">
+          <h3>Connect</h3>
+          <a
+            href="https://www.linkedin.com/in/navidreza-haghighi-2261401b6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn
+          </a>
+          <a
+            href="https://www.instagram.com/naweedhag"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+          </a>
+        </div>
 
-          // Save preference
-          if (document.body.classList.contains("purple-theme")) {
-            localStorage.setItem("theme", "purple");
-          } else {
-            localStorage.setItem("theme", "blue");
-          }
-        });
-      });
-    </script>
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="#about">About Me</a>
+          <a href="#skills">Projects</a>
+          <a href="#experience">Experience</a>
+        </div>
+      </div>
+      <div class="footer-bottom container">
+        <p>&copy; 2026 Navidreza Haghighi. Built with care in Tehran.</p>
+        <a href="#home" aria-label="Back to top">
+          Back to top <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        </a>
+      </div>
+    </footer>
 
-    <script>
-      window.onload = function () {
-        if (window.location.hash) {
-          setTimeout(function () {
-            window.scrollTo(0, 0);
-          }, 1);
-        }
-        const colorToggle = document.getElementById("colorToggle");
-
-        if (localStorage.getItem("theme") === "purple") {
-          document.body.classList.add("purple-theme");
-        }
-
-        colorToggle.addEventListener("click", function (e) {
-          e.preventDefault();
-          document.body.classList.toggle("purple-theme");
-
-          if (document.body.classList.contains("purple-theme")) {
-            localStorage.setItem("theme", "purple");
-          } else {
-            localStorage.setItem("theme", "blue");
-            
-          }
-        });
-      };
-    </script>
   </body>
 </html>
-
