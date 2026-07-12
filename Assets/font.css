@@ -4,7 +4,7 @@
 	font-style: normal;
 	src: local('IRYekan'), url('/Assets/Fonts/IRYekan.woff') format('woff');
 }
-/* use this class to attach this font to any element i.e. <p class="fontsforweb_fontid_49094">Text with this font applied</p> */
+
 .fontsforweb_fontid_49094 {
 	font-family: 'IRYekan' !important;
 }
@@ -14,5 +14,3 @@
 body,button{
 	font-family: "IRYekan";
 }
-
-/* Font downloaded from FontsForWeb.com */

@@ -18,7 +18,7 @@ body {
   background-size: 400% 400%;
   animation: gradientShift 6s ease infinite;
   color: white;
-  font-size: 1.2rem; /* default text size */
+  font-size: 1.2rem;
   line-height: 1.5;
   background: var(--background);
 }
@@ -83,8 +83,8 @@ small {
 .gob_image {
   display: flex;
   flex-direction: row;
-  /* width: 400px; */
-  /* display: none; */
+
+
   position: relative;
 }
 .gob_image img {
@@ -199,13 +199,11 @@ i.fa.fa-youtube::before {
   width: 5px;
 }
 .section-about {
-  /* width: 300px; */
+
   position: relative;
   width: 100%;
   margin-bottom: 30px;
-  /* font-size: 1.6rem;
-    size: 1.6rem;
-    padding:10% 12% ; */
+
 }
 .about-me {
   display: flex;
@@ -244,7 +242,7 @@ i.fa.fa-youtube::before {
   margin-bottom: 20px;
 }
 
-/*Animations*/
+
 
 @keyframes fadeUp {
   0% {
@@ -328,7 +326,7 @@ body.purple-theme {
   color: var(--main-color);
 }
 
-/* Hover effects */
+
 .nav_bar a:hover,
 .social-icons a:hover {
   color: var(--main-color);
@@ -444,7 +442,7 @@ body.purple-theme {
 html {
   scroll-behavior: smooth;
 }
-/* scrollbar */
+
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -477,12 +475,12 @@ html {
 
 
 .nav_bar {
-  margin-top: 0; 
+  margin-top: 0;
 }
 .nav_bar ul {
   display: flex;
   gap: 1rem;
-  
+
 }
 .nav_bar{
   top: -50x;
@@ -561,7 +559,7 @@ html {
   margin-top: 0;
 }
 
-/* Responsive layout */
+
 html,
 body {
   max-width: 100%;
@@ -628,7 +626,7 @@ img {
   width: min(100%, 32rem);
 }
 
-/* The image and copy share one scaling context so they never drift apart. */
+
 .gob_image > .cloud {
   top: -6.5rem;
   left: 50%;
@@ -659,6 +657,13 @@ img {
   line-height: 1.25;
   opacity: 0;
   animation: fadeIn 1s ease-out forwards 1s;
+}
+
+@media (min-width: 1001px) {
+  .gob_image > .cloud {
+    top: -8rem;
+    left: 82%;
+  }
 }
 
 .section-about,
@@ -813,7 +818,7 @@ img {
   }
 }
 
-/* Refined navigation interaction */
+
 .nav_bar a {
   isolation: isolate;
   transition: color 0.25s ease, transform 0.25s ease,
@@ -852,7 +857,7 @@ img {
   backface-visibility: hidden;
 }
 
-/* Tighter spacing between content sections */
+
 .section-about {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -864,7 +869,7 @@ img {
   padding-bottom: 2.5rem;
 }
 
-/* Footer */
+
 .site-footer {
   margin-top: 2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -981,7 +986,7 @@ img {
   }
 }
 
-/* Projects and experience cards */
+
 .section-projects,
 .section-experience {
   display: grid;
@@ -1123,7 +1128,7 @@ img {
   }
 }
 
-/* About section presentation */
+
 .section-about {
   display: grid;
   gap: 1.25rem;
@@ -1189,7 +1194,7 @@ img {
   box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.18);
 }
 
-/* Override the earlier divider because each item is now its own card. */
+
 .section-about > li:not(:last-child)::after {
   display: none;
 }
